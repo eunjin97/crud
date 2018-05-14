@@ -1,0 +1,14 @@
+<h1>게시판</h1>
+
+<%@posts.each do |p|%>
+아이디 : <%=p.email%><br>
+제목 : <%=p.title%><br>
+내용 : <%=p.content%><br>
+<a href='/home/destroy/<%=p.id%>'>삭제</a>
+<a href='/home/edit/<%=p.id%>'>수정</a>
+---------------------<br>
+<%end%>
+
+<a href = '/home/new'>글 쓰러가기</a>
+
+
